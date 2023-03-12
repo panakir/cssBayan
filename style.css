@@ -63,8 +63,29 @@ body {
   justify-content: center;
 }
 
+.mem:hover .mem__content {
+  height: auto;
+}
+
+.mem:hover .mem__image {
+  transform: scale(1);
+}
+
 .mem__input {
   appearance: none;
+}
+
+.mem__input[id^=item-]:checked~.mem__header .mem__icon {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.mem__input[id^=item-]:checked~.mem__content  {
+  height: auto;
+}
+
+.mem__input[id^=item-]:checked~.mem__content .mem__image {
+  transform: scale(1);
 }
 
 .mem__header {
@@ -94,6 +115,9 @@ body {
 .mem__content {
   width: 100%;  
   height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mem__image {
