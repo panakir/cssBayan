@@ -29,14 +29,14 @@ body {
 }
 
 .header {
-  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  border-bottom: .25rem solid rgba(0, 0, 0, .1);
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 2rem 0;
 }
 
 .header__title {
@@ -44,7 +44,7 @@ body {
 }
 
 .main {
-  padding-top: 30px;
+  padding-top: 2rem;
   flex: 1 0 auto;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .accordion__item {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 /* Mem`s block */
@@ -113,10 +113,10 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   background-color: rgba(137, 219, 232, 0.5);
-  padding: 15px;
-  border-radius: 30px;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 .mem__title {
@@ -126,8 +126,8 @@ body {
 
 .mem__icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   transform: rotate(45deg);
   opacity: 0;
   background: url(https://imgs.search.brave.com/uWIHdzS7juICt2fG1b-Skv1PiYQf3_FqD6vyGVQBcdM/rs:fit:1000:1000:1/g:ce/aHR0cDovL2Nkbi5v/bmxpbmV3ZWJmb250/cy5jb20vc3ZnL2Rv/d25sb2FkXzEzNjE5/MC5zdmc.svg);
@@ -142,7 +142,7 @@ body {
 }
 
 .mem__image {
-  width: 80%;
+  width: 50%;
   transform: scale(0);
 }
 
@@ -157,13 +157,14 @@ body {
 }
 
 .footer__author a {
-  margin-left: 5px;
+  margin-left: .3rem;
 }
 
 .footer__logo img {
-  width: 100px;
+  width: 14rem;
 }
 
+/* Media query */
 @media (max-width: 820px) {
   .header__title {
     font-size: 2rem;
@@ -172,19 +173,22 @@ body {
   .mem__title {
     font-size: 1.5rem;
   }
+
+  .mem__image {
+    width: 80%;
+  }
 }
 
-/* Media query */
 @media (max-width: 414px) {
   .header__title {
     font-size: 1.5rem;
-    max-width: 200px;
+    max-width: 15rem;
   }
 
   .mem__title {
     font-size: 1rem;
   }
-  
+
   .container {
     max-width: 100%;
   }
